@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8BFD7489-2B83-4879-9A55-B64540854AC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CE32C47E-F104-4AFB-8E81-1C081605A0C4}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HoloJson.Core", "src\HoloJson.Core\HoloJson.Core.xproj", "{F4035C70-4277-4FB3-A3BC-47925A65BE89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B553998B-5C93-4672-9C96-7C7CAFD0D414}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HoloJson.Core.Tests", "test\HoloJson.Core.Tests\HoloJson.Core.Tests.xproj", "{CE5E3E88-88A6-42E9-8C48-4691FB501004}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HoloJson.CoreDriver", "src\HoloJson.CoreDriver\HoloJson.CoreDriver.xproj", "{D2D1C62B-C2CD-461A-AE1E-CE3DFC9FE2A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4035C70-4277-4FB3-A3BC-47925A65BE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4035C70-4277-4FB3-A3BC-47925A65BE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4035C70-4277-4FB3-A3BC-47925A65BE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4035C70-4277-4FB3-A3BC-47925A65BE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5E3E88-88A6-42E9-8C48-4691FB501004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5E3E88-88A6-42E9-8C48-4691FB501004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5E3E88-88A6-42E9-8C48-4691FB501004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5E3E88-88A6-42E9-8C48-4691FB501004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D1C62B-C2CD-461A-AE1E-CE3DFC9FE2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D1C62B-C2CD-461A-AE1E-CE3DFC9FE2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D1C62B-C2CD-461A-AE1E-CE3DFC9FE2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D1C62B-C2CD-461A-AE1E-CE3DFC9FE2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4035C70-4277-4FB3-A3BC-47925A65BE89} = {8BFD7489-2B83-4879-9A55-B64540854AC9}
+		{CE5E3E88-88A6-42E9-8C48-4691FB501004} = {B553998B-5C93-4672-9C96-7C7CAFD0D414}
+		{D2D1C62B-C2CD-461A-AE1E-CE3DFC9FE2A3} = {8BFD7489-2B83-4879-9A55-B64540854AC9}
+	EndGlobalSection
+EndGlobal
