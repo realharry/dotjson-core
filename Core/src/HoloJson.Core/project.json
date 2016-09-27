@@ -1,6 +1,6 @@
 {
   "name": "HoloJson.Core",
-  "version": "1.0.1-*",
+  "version": "1.0.2-*",
   "title": "HoloJson.Core",
   "description": "Simple JSON Parser/Serializer (.Net Core).",
   "copyright": "Copyright 2016",

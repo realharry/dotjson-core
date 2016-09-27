@@ -18,7 +18,7 @@ namespace HoloJson.Core.UnitTests.Core
             var backing = new char[] { 'a', 'b', 'c', 'd', 'e', 'f' };
             var cyclicCharArray = new CyclicCharArray(backing);
 
-            Assert.AreEqual(6, cyclicCharArray.ArrayLength);
+            Assert.AreEqual(backing.Length, cyclicCharArray.ArrayLength);
 
             cyclicCharArray.Offset = 1;
             cyclicCharArray.Length = 3;

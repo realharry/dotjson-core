@@ -15,7 +15,7 @@ namespace HoloJson.Core.UnitTests.Builder
     {
 
         [TestCase]
-        public void TestJsonBuild1()
+        public async Task TestJsonBuild1Async()
         {
             LiteJsonBuilder jsonBuilder = new HoloJsonMiniBuilder();
 
@@ -36,11 +36,12 @@ namespace HoloJson.Core.UnitTests.Builder
             // String jsonStr = jsonBuilder.Build(obj, 2);
             String jsonStr = null;
             try {
-                var task = jsonBuilder.BuildAsync(obj);
-                // ????
-                // if (task.IsCompleted) {
-                    jsonStr = task.Result;
-                // }
+                //var task = jsonBuilder.BuildAsync(obj);
+                //// ????
+                //// if (task.IsCompleted) {
+                //    jsonStr = task.Result;
+                //// }
+                jsonStr = await jsonBuilder.BuildAsync(obj);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
@@ -48,7 +49,7 @@ namespace HoloJson.Core.UnitTests.Builder
         }
 
         [TestCase]
-        public void TestJsonBuild2()
+        public async Task TestJsonBuild2Async()
         {
             LiteJsonBuilder jsonBuilder = new HoloJsonMiniBuilder();
 
@@ -58,11 +59,12 @@ namespace HoloJson.Core.UnitTests.Builder
             Object obj = list;
             String jsonStr = null;
             try {
-                var task = jsonBuilder.BuildAsync(obj);
-                // ????
-                // if (task.IsCompleted) {
-                jsonStr = task.Result;
-                // }
+                //var task = jsonBuilder.BuildAsync(obj);
+                //// ????
+                //// if (task.IsCompleted) {
+                //jsonStr = task.Result;
+                //// }
+                jsonStr = await jsonBuilder.BuildAsync(obj);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
@@ -70,18 +72,19 @@ namespace HoloJson.Core.UnitTests.Builder
         }
 
         [TestCase]
-        public void TestJsonBuild3()
+        public async Task TestJsonBuild3Async()
         {
             LiteJsonBuilder jsonBuilder = new HoloJsonMiniBuilder();
 
             Object objA = new char[] { 'X', 'Y', 'Z' };
             String jsonStrA = null;
             try {
-                var task = jsonBuilder.BuildAsync(objA);
-                // ????
-                // if (task.IsCompleted) {
-                    jsonStrA = task.Result;
-                // }
+                //var task = jsonBuilder.BuildAsync(objA);
+                //// ????
+                //// if (task.IsCompleted) {
+                //    jsonStrA = task.Result;
+                //// }
+                jsonStrA = await jsonBuilder.BuildAsync(objA);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
@@ -90,11 +93,12 @@ namespace HoloJson.Core.UnitTests.Builder
             Object objB = new byte[]{3,5,7};
             String jsonStrB = null;
             try {
-                var task = jsonBuilder.BuildAsync(objB);
-                // ????
-                // if (task.IsCompleted) {
-                    jsonStrB = task.Result;
-                // }
+                //var task = jsonBuilder.BuildAsync(objB);
+                //// ????
+                //// if (task.IsCompleted) {
+                //    jsonStrB = task.Result;
+                //// }
+                jsonStrB = await jsonBuilder.BuildAsync(objB);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
@@ -103,11 +107,12 @@ namespace HoloJson.Core.UnitTests.Builder
             Object objC = new int[] { 101, -55, 25 };
             String jsonStrC = null;
             try {
-                var task = jsonBuilder.BuildAsync(objC);
-                // ????
-                // if (task.IsCompleted) {
-                jsonStrC = task.Result;
-                // }
+                //var task = jsonBuilder.BuildAsync(objC);
+                //// ????
+                //// if (task.IsCompleted) {
+                //jsonStrC = task.Result;
+                //// }
+                jsonStrC = await jsonBuilder.BuildAsync(objC);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
@@ -116,11 +121,12 @@ namespace HoloJson.Core.UnitTests.Builder
             Object objD = new string[] { "abc", "pqr", "xyz" };
             String jsonStrD = null;
             try {
-                var task = jsonBuilder.BuildAsync(objD);
-                // ????
-                // if (task.IsCompleted) {
-                jsonStrD = task.Result;
-                // }
+                //var task = jsonBuilder.BuildAsync(objD);
+                //// ????
+                //// if (task.IsCompleted) {
+                //jsonStrD = task.Result;
+                //// }
+                jsonStrD = await jsonBuilder.BuildAsync(objD);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
@@ -129,11 +135,12 @@ namespace HoloJson.Core.UnitTests.Builder
             Object objE = new object[] { "abc", new object[] {5, new List<object>() { 33, "pp" }, new Dictionary<string, object>() {{"strArray", new object[] {'a', 'b'} }, {"date", new DateTime()} }} };
             String jsonStrE = null;
             try {
-                var task = jsonBuilder.BuildAsync(objE);
-                // ????
-                // if (task.IsCompleted) {
-                jsonStrE = task.Result;
-                // }
+                //var task = jsonBuilder.BuildAsync(objE);
+                //// ????
+                //// if (task.IsCompleted) {
+                //jsonStrE = task.Result;
+                //// }
+                jsonStrE = await jsonBuilder.BuildAsync(objE);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
@@ -141,7 +148,7 @@ namespace HoloJson.Core.UnitTests.Builder
         }
 
         [TestCase]
-        public void TestJsonBuild4()
+        public async Task TestJsonBuild4Async()
         {
             LiteJsonBuilder jsonBuilder = new HoloJsonMiniBuilder();
 
@@ -152,11 +159,12 @@ namespace HoloJson.Core.UnitTests.Builder
 
             String jsonStr = null;
             try {
-                var task = jsonBuilder.BuildAsync(obj);
-                // ????
-                if (task.IsCompleted) {
-                    jsonStr = task.Result;
-                }
+                //var task = jsonBuilder.BuildAsync(obj);
+                //// ????
+                //if (task.IsCompleted) {
+                //    jsonStr = task.Result;
+                //}
+                jsonStr = await jsonBuilder.BuildAsync(obj);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }

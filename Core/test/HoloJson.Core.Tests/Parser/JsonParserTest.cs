@@ -17,7 +17,7 @@ namespace HoloJson.Core.UnitTests.Parser
     public class JsonParserTest
     {
         [TestCase]
-        public void TestParseString()
+        public async Task TestParseStringAsync()
         {
             LiteJsonParser jsonParser = new HoloJsonMiniParser();
 
@@ -26,12 +26,12 @@ namespace HoloJson.Core.UnitTests.Parser
 
             object node = null;
             try {
-                var task = jsonParser.ParseAsync(jsonString);
-                if (task.IsCompleted) {
-                    node = task.Result;
-                }
+                //var task = jsonParser.ParseAsync(jsonString);
+                //if (task.IsCompleted) {
+                //    node = task.Result;
+                //}
+                node = await jsonParser.ParseAsync(jsonString);
                 System.Diagnostics.Debug.WriteLine("node = " + node);
-
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
@@ -42,9 +42,10 @@ namespace HoloJson.Core.UnitTests.Parser
             // string jsonStr = jsonBuilder.build(node);
             string jsonStr = null;
             try {
-                var task = jsonBuilder.BuildAsync(node);
-                // task.RunSynchronously();
-                jsonStr = task.Result;
+                //var task = jsonBuilder.BuildAsync(node);
+                //// task.RunSynchronously();
+                //jsonStr = task.Result;
+                jsonStr = await jsonBuilder.BuildAsync(node);
             } catch (HoloJsonMiniException ex) {
                 System.Diagnostics.Debug.WriteLine("Exception = " + ex.Message);
             }
