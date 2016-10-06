@@ -19,8 +19,8 @@
       "Harry Y"
     ],
     "releaseNotes": "Ported to .Net Core.",
-    "projectUrl": "http://holojson.codeplex.com/",
-    "licenseUrl": "http://holojson.codeplex.com/license",
+    "projectUrl": "https://github.com/holojson/core",
+    "licenseUrl": "https://github.com/holojson/core/blob/master/LICENSE",
     "requireLicenseAcceptance": false
   },
 
