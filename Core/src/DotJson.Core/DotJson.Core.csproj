@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Simple JSON Parser/Serializer (.Net Core).</Description>
+    <Copyright>Copyright 2016</Copyright>
+    <AssemblyTitle>DotJson.Core</AssemblyTitle>
+    <VersionPrefix>1.0.2</VersionPrefix>
+    <Authors>Harry Y</Authors>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <AssemblyName>DotJson.Core</AssemblyName>
+    <PackageId>DotJson.Core</PackageId>
+    <PackageTags>JSON;DotNet Core;CSharp</PackageTags>
+    <PackageReleaseNotes>Downgraded to NetStandard 1.4.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/holojson/core</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/holojson/core/blob/master/LICENSE</PackageLicenseUrl>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.0.1" />
+  </ItemGroup>
+
+</Project>
