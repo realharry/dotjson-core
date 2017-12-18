@@ -10,13 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HoloJson.Core", "src\HoloJson.Core\HoloJson.Core.xproj", "{F4035C70-4277-4FB3-A3BC-47925A65BE89}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotJson.Core", "src\DotJson.Core\DotJson.Core.xproj", "{F4035C70-4277-4FB3-A3BC-47925A65BE89}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B553998B-5C93-4672-9C96-7C7CAFD0D414}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HoloJson.Core.Tests", "test\HoloJson.Core.Tests\HoloJson.Core.Tests.xproj", "{CE5E3E88-88A6-42E9-8C48-4691FB501004}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotJson.Core.Tests", "test\DotJson.Core.Tests\DotJson.Core.Tests.xproj", "{CE5E3E88-88A6-42E9-8C48-4691FB501004}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HoloJson.CoreDriver", "src\HoloJson.CoreDriver\HoloJson.CoreDriver.xproj", "{D2D1C62B-C2CD-461A-AE1E-CE3DFC9FE2A3}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotJson.CoreDriver", "src\DotJson.CoreDriver\DotJson.CoreDriver.xproj", "{D2D1C62B-C2CD-461A-AE1E-CE3DFC9FE2A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
